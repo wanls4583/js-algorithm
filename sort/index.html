@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sort-demo</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="bubble-sort.js"></script>
+    <script type="text/javascript" src="fast-sort.js"></script>
+    <script type="text/javascript" src="insert-sort.js"></script>
+    <script type="text/javascript" src="shell-sort.js"></script>
+    <script type="text/javascript" src="select-sort.js"></script>
+    <script type="text/javascript" src="heap-sort.js"></script>
+    <script type="text/javascript" src="merge-sort.js"></script>
+    <script type="text/javascript" src="topology-sort.js"></script>
+    <script type="text/javascript">
+    //产生随机数组
+    function createArr(size, max) {
+        var arr = [];
+        for (var i = 0; i < size; i++) {
+            arr[i] = (max * Math.random()) >> 0;
+        }
+        return arr;
+    }
+    //验证排序后的数组是否正确
+    function validate(arr) {
+        for (var i = 0, len = arr.length - 1; i < len; i++) {
+            if (arr[i] > arr[i + 1]) {
+                console.warn('error sort:', arr);
+                break;
+            }
+        }
+    }
+
+    console.log('%c bubbleSort', 'color:red');
+    var arr = createArr(10, 100);
+    console.log(arr);
+    arr = bubbleSort(arr);
+    console.log(arr);
+    validate(arr);
+    console.log('--------------------------------------------');
+
+    console.log('%c fastSort', 'color:red');
+    var arr = createArr(10, 100);
+    console.log(arr);
+    arr = fastSort(arr);
+    console.log(arr);
+    validate(arr);
+    console.log('--------------------------------------------');
+
+    console.log('%c insertSort', 'color:red');
+    var arr = createArr(10, 100);
+    console.log(arr);
+    arr = insertSort(arr);
+    console.log(arr);
+    validate(arr);
+    console.log('--------------------------------------------');
+
+    console.log('%c shellSort', 'color:red');
+    var arr = createArr(10, 100);
+    console.log(arr);
+    arr = shellSort(arr);
+    console.log(arr);
+    validate(arr);
+    console.log('--------------------------------------------');
+
+    console.log('%c selectSort', 'color:red');
+    var arr = createArr(10, 100);
+    console.log(arr);
+    arr = selectSort(arr);
+    console.log(arr);
+    validate(arr);
+    console.log('--------------------------------------------');
+
+    console.log('%c heapSort', 'color:red');
+    var arr = createArr(10, 100);
+    console.log(arr);
+    arr = heapSort(arr);
+    console.log(arr);
+    validate(arr);
+    console.log('--------------------------------------------');
+
+    console.log('%c mergeSort', 'color:red');
+    var arr = createArr(10, 100);
+    console.log(arr);
+    arr = mergeSort(arr);
+    console.log(arr);
+    validate(arr);
+    console.log('--------------------------------------------');
+
+    console.log('%c topologySort', 'color:red');
+    var arr = [[9,10],[1,2],[5,9],[2,3],[4,5],[3,4]];
+    console.log(arr);
+    arr = topologySort(arr);
+    console.log(arr);
+    console.log('--------------------------------------------');
+    </script>
+</body>
+
+</html>
