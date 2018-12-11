@@ -1,6 +1,6 @@
 # js-sort-algorithm
 
-> 常用排序算法的 JavaScript 实现。
+> 常用算法的 JavaScript 实现。
 
 ## 内容
 
