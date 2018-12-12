@@ -1,5 +1,7 @@
 //给定一个数组，从中选取n个数，使其相加的和为sum
-//算法复杂度: O(n^2)
+//算法复杂度: O(2^n)
+
+//解法1:
 function pick(arr, n, sum) {
     function _cal(arr) {
         var num = 0;
@@ -34,4 +36,29 @@ function pick(arr, n, sum) {
         }
     }
     return _pick([], 1, arr);
+}
+
+//解法2：
+function pick(arr, n, sum) {
+
+    function _pick(s, index ,num) {
+        //最多选取n个元素
+        if(index >= arr.length || num >= n) {
+            return false;
+        }
+        //有正解
+        if(s+arr[index] == sum) {
+            return [arr[index]];
+        }
+        //需要下标为index的元素
+        var result = _pick(s+arr[index], index+1, num+1);
+        if(result) {
+            result.unshift(arr[index]);
+            return result;
+        }
+        //不需要下标为index的元素
+        return _pick(s, index+1, num);
+    }
+
+    return _pick(0, 0, 0);
 }
