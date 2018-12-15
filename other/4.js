@@ -4,11 +4,11 @@
 !function(){
 	function hanoi(n,a,b,c) {
 		if(n==1) { //如果 a 柱子上只有一个圆盘了，则直接移动
-			console.log(a,'-->',c, n);
+			console.log(a,'-->',c, '第'+n+'个圆盘');
 		} else {
 			//将 n-1 个圆盘从 a 柱子借助 c 柱子，移动到 b 柱子
 			hanoi(n-1, a, c, b);
-			console.log(a,'-->',c, n);
+			console.log(a,'-->',c, '第'+n+'个圆盘');
 			//将 n-1 个圆盘从 b 柱子借助 a 柱子，移动到 b 柱子
 			hanoi(n-1, b, a, c);
 		}
