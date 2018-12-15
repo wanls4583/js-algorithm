@@ -16,7 +16,8 @@
 
 ### other
 
-- [**`给定一个数组，从中选取n个数，使其相加的和为sum`**](https://github.com/wanls4583/js-algorithm/blob/master/other/1.js)
+- [**`背包问题`**](https://github.com/wanls4583/js-algorithm/blob/master/other/1.js)
+- [**`n皇后问题`**](https://github.com/wanls4583/js-algorithm/blob/master/other/2.js)
 
 ## example
 
