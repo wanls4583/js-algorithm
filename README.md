@@ -19,6 +19,7 @@
 - [**`背包问题`**](https://github.com/wanls4583/js-algorithm/blob/master/other/1.js)
 - [**`n皇后问题`**](https://github.com/wanls4583/js-algorithm/blob/master/other/2.js)
 - [**`递归求Cn^k`**](https://github.com/wanls4583/js-algorithm/blob/master/other/3.js)
+- [**`汉诺塔问题`**](https://github.com/wanls4583/js-algorithm/blob/master/other/4.js)
 
 ## example
 
