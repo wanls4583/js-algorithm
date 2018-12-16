@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="mid-order-recursion.js"></script>
 	<script type="text/javascript" src="post-order.js"></script>
 	<script type="text/javascript" src="post-order-recursion.js"></script>
+	<script type="text/javascript" src="bfs.js"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -24,10 +25,10 @@
 	console.log('----1---');
 	console.log('-2-----5-');
 	console.log('3-4---6-7');
-	console.log('%c 非递归前序遍历', 'color:red');
+	console.log('%c 非递归前序遍历(深度优先)', 'color:red');
 	console.log(preOrder(tree()));
 	console.log('--------------------------------------------');
-	console.log('%c 递归前序遍历', 'color:red');
+	console.log('%c 递归前序遍历(深度优先)', 'color:red');
 	console.log(preOrderRec(tree()));
 	console.log('--------------------------------------------');
 	console.log('%c 非递归中序遍历', 'color:red');
@@ -41,6 +42,9 @@
 	console.log('--------------------------------------------');
 	console.log('%c 递归后序遍历', 'color:red');
 	console.log(postOrderRec(tree()));
+	console.log('--------------------------------------------');
+	console.log('%c 广度优先遍历', 'color:red');
+	console.log(bfs(tree()));
 	console.log('--------------------------------------------');
 
 </script>
