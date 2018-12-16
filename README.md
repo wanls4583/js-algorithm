@@ -16,12 +16,13 @@
 
 ### tree
 
-- [**`递归遍历前序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/pre-order-recursion.js)
-- [**`非递归遍历前序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/pre-order.js)
+- [**`递归遍历前序二叉树(深度优先)`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/pre-order-recursion.js)
+- [**`非递归遍历前序二叉树(深度优先)`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/pre-order.js)
 - [**`递归遍历中序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/mid-order-recursion.js)
 - [**`非递归遍历中序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/mid-order.js)
 - [**`递归遍历后序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/post-order-recursion.js)
 - [**`非递归遍历后序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/post-order.js)
+- [**`广度优先遍历二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/bfs.js)
 
 ### other
 
