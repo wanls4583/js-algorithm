@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<script type="text/javascript" src="pre-order-recursion.js"></script>
+	<script type="text/javascript" src="pre-order.js"></script>
+	<script type="text/javascript" src="mid-order.js"></script>
+	<script type="text/javascript" src="mid-order-recursion.js"></script>
+	<script type="text/javascript" src="post-order.js"></script>
+	<script type="text/javascript" src="post-order-recursion.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	function tree() {
+		var tree = {data:1};
+		tree.left = {data:2};
+		tree.left.left = {data:3};
+		tree.left.right = {data:4};
+		tree.right = {data:5};
+		tree.right.left = {data:6};
+		tree.right.right = {data:7};
+		return tree;
+	}
+	console.log('----1---');
+	console.log('-2-----5-');
+	console.log('3-4---6-7');
+	console.log('%c 非递归前序遍历', 'color:red');
+	console.log(preOrder(tree()));
+	console.log('--------------------------------------------');
+	console.log('%c 递归前序遍历', 'color:red');
+	console.log(preOrderRec(tree()));
+	console.log('--------------------------------------------');
+	console.log('%c 非递归中序遍历', 'color:red');
+	console.log(midOrder(tree()));
+	console.log('--------------------------------------------');
+	console.log('%c 递归中序遍历', 'color:red');
+	console.log(midOrderRec(tree()));
+	console.log('--------------------------------------------');
+	console.log('%c 非递归后序遍历', 'color:red');
+	console.log(postOrder(tree()));
+	console.log('--------------------------------------------');
+	console.log('%c 递归后序遍历', 'color:red');
+	console.log(postOrderRec(tree()));
+	console.log('--------------------------------------------');
+
+</script>
+</body>
+</html>

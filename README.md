@@ -14,6 +14,15 @@
 - [**`堆排序`**](https://github.com/wanls4583/js-algorithm/blob/master/sort/heap-sort.js)
 - [**`归并排序`**](https://github.com/wanls4583/js-algorithm/blob/master/sort/merge-sort.js)
 
+### tree
+
+- [**`递归遍历前序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/pre-order-recursion.js)
+- [**`非递归遍历前序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/pre-order.js)
+- [**`递归遍历中序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/mid-order-recursion.js)
+- [**`非递归遍历中序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/mid-order.js)
+- [**`递归遍历后序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/post-order-recursion.js)
+- [**`非递归遍历后序二叉树`**](https://github.com/wanls4583/js-algorithm/blob/master/tree/post-order.js)
+
 ### other
 
 - [**`背包问题`**](https://github.com/wanls4583/js-algorithm/blob/master/other/1.js)
@@ -21,10 +30,12 @@
 - [**`递归求Cn^k`**](https://github.com/wanls4583/js-algorithm/blob/master/other/3.js)
 - [**`汉诺塔问题`**](https://github.com/wanls4583/js-algorithm/blob/master/other/4.js)
 
+
 ## example
 
 - [**sort demo**](https://github.com/wanls4583/js-algorithm/blob/master/sort/index.html)
 - [**other demo**](https://github.com/wanls4583/js-algorithm/blob/master/other/index.html)
+- [**tree demo**](https://github.com/wanls4583/js-algorithm/blob/master/tree/index.html)
 
 ## 贡献
 
